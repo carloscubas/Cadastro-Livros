@@ -18,7 +18,7 @@ public class Livro {
 	private Long id;
 	
 	@NotNull
-	@Size(min = 2, max = 100)
+	@Size(max = 100, min = 2)
 	private String nome;
 	
 	@NotNull
