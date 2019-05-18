@@ -2,8 +2,8 @@ package br.biblioteca.livros.controladores;
 
 import javax.validation.Valid;
 
-import br.biblioteca.livros.beans.Autor;
-import br.biblioteca.livros.beans.Livro;
+import br.biblioteca.livros.entities.Autor;
+import br.biblioteca.livros.entities.Livro;
 import br.biblioteca.livros.repository.AutorRepository;
 import br.biblioteca.livros.repository.LivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;

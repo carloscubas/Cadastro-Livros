@@ -1,4 +1,4 @@
-package br.biblioteca.livros.beans;
+package br.biblioteca.livros.entities;
 
 import java.io.Serializable;
 

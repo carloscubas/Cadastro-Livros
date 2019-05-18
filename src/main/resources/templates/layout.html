@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
 <head>
     <meta charset="UTF-8" />
     <title>Biblioteca de livros</title>
@@ -19,9 +21,11 @@
                 <img th:src="@{/img/livros.png}" src="../static/img/livros.jpg" width="50px" /></a>
         </div>
         <ul class="nav navbar-nav">
-            <li><a class="brand" th:href="@{/livros/list}" href="#"> Livros </a></li>
-            <li><a class="brand" th:href="@{/autores/list}" href="#"> Autores </a></li>
-            <li><a class="brand" th:href="@{/usuarios/list}" href="#"> Usuários </a></li>
+            <li sec:authorize="isAnonymous()"><a class="brand" th:href="@{/livros/list}" href="#"> Livros </a></li>
+            <li sec:authorize="isAnonymous()"><a class="brand" th:href="@{/autores/list}" href="#"> Autores </a></li>
+            <li sec:authorize="isAnonymous()"><a th:href="@{/login}" href="#"> Login </a></li>
+            <li sec:authorize="hasAuthority('ROLE_ADMIN')" ><a th:href="@{/user/listadmin}" href="#"> Lista Admin</a></li>
+            <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}" href="#"> Logout </a></li>
         </ul>
     </nav>
     <h1 layout:fragment="header">cabeçalho falso</h1>

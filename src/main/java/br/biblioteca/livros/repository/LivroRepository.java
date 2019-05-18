@@ -1,6 +1,6 @@
 package br.biblioteca.livros.repository;
 
-import br.biblioteca.livros.beans.Livro;
+import br.biblioteca.livros.entities.Livro;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

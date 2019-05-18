@@ -1,6 +1,6 @@
 package br.biblioteca.livros.controladores;
 
-import br.biblioteca.livros.beans.Livro;
+import br.biblioteca.livros.entities.Livro;
 import br.biblioteca.livros.repository.LivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

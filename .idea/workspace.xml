@@ -1,37 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+  <component name="ChangeListManager">
+    <list default="true" id="82a4c048-2011-44cd-8b8f-6a6b719c04a2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/MyAuthenticationSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/UserControllers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/SecurityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/LoginValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/UserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages_pt_BR.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/listadmin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/LivrosApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/LivrosApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/beans/Autor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/Autor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/beans/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/Livro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/Index.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LivroController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LivroController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/AutorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/AutorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/LivroRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/LivroRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/LivrosApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/LivrosApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/beans/Autor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/beans/Livro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/controladores/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/controladores/Index.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/controladores/LivroController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/controladores/LivroController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/repository/AutorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/repository/AutorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/repository/LivroRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/biblioteca/livros/repository/LivroRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/layout.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$USER_HOME$/workspace/pagseguro-logistics-api/logistics-service-order" value="10387778739548" />
-        <entry key="$USER_HOME$/workspace/pagseguro-salesforce/salesforce" value="16260761297542" />
-        <entry key="$USER_HOME$/workspace/pagseguro/maven-project" value="195663085644766" />
-      </map>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/error/404.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/listadmin.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/livros/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LivroController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="35" column="71" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/UserControllers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
     </option>
-    <option name="projectSyncType">
-      <map>
-        <entry key="$PROJECT_DIR$/../mixcontents-autentication" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../mixcontents-backend" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../security/authserver" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../spring-data-mongo" value="PREVIEW" />
-        <entry key="$USER_HOME$/Downloads/demo" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/business-conditions" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/mesos-release-plugin" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/pagseguro/maven-project" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/salesforce" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/salesforce-at" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/salesforce-custommer-api" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/salesforce-custommer-jobs" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/salesforce-data-migration" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/salesforce-pipeline-api" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/salesforce-pipeline-jobs" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/salesforce-styleguide" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/salesforce-web" value="PREVIEW" />
-      </map>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/RoleRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/SecurityService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/LoginValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/MyAuthenticationSuccessHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/beans/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/beans/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/UserValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/LivrosApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/UserControllers.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/user/listadmin.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="livros" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="livros" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="livros" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="livros" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="build-helper" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="livros" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="livros" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="compiler" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
+      </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -39,6 +237,138 @@
     <option name="y" value="18" />
     <option name="width" value="1793" />
     <option name="height" value="1028" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="livros" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="livros" type="462c0819:PsiDirectoryNode" />
+              <item name="controladores" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="livros" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="livros" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="livros" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="livros" type="462c0819:PsiDirectoryNode" />
+              <item name="validator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="livros" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="livros" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cadastro-Livros" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="LombokPluginEnabledInProject" value="true" />
@@ -51,11 +381,35 @@
     <property name="LombokPluginIS_RUNTIME_PATCH_Enabled" value="true" />
     <property name="LombokPluginIS_THIRD_PARTY_Enabled" value="true" />
     <property name="LombokPluginIS_VAL_Enabled" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Project_Default.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/br/biblioteca/livros" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet">
@@ -114,6 +468,280 @@
         <item itemvalue="Application.LivrosApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82a4c048-2011-44cd-8b8f-6a6b719c04a2" name="Default Changelist" comment="" />
+      <created>1558188191799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558188191799</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1945" y="18" width="1793" height="1028" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.493007" visible="true" weight="0.1730659" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Project Explorer" order="3" />
+      <window_info id="Job Explorer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="DB Browser" order="6" />
+      <window_info id="Image Layers" order="7" />
+      <window_info id="JRebel" order="8" sideWeight="0.506993" side_tool="true" weight="0.17026107" />
+      <window_info id="Favorites" order="9" sideWeight="0.506993" side_tool="true" weight="0.17026107" />
+      <window_info id="Designer" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.47958598" weight="0.22478071" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8842407" weight="0.39624724" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8343876" weight="0.13267544" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4867366" weight="0.29890645" />
+      <window_info anchor="bottom" id="DB Execution Console" order="7" />
+      <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Executor" order="9" />
+      <window_info anchor="bottom" id="Console" order="10" />
+      <window_info anchor="bottom" id="SonarQube" order="11" sideWeight="0.4956427" weight="0.28108108" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.75889784" weight="0.13876146" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49782136" weight="0.32972974" />
+      <window_info anchor="bottom" id="Build" order="14" sideWeight="0.49271986" visible="true" weight="0.2723112" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.11575931" side_tool="true" visible="true" weight="0.39624724" />
+      <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.4080229" weight="0.23399559" />
+      <window_info anchor="bottom" id="SonarLint" order="17" sideWeight="0.5177956" weight="0.092889905" />
+      <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.03415783" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.09609784" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="FAQ Robot" order="6" />
+      <window_info anchor="right" id="Gradle" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.08716838" />
+      <window_info active="true" anchor="right" id="Maven" order="10" visible="true" weight="0.16848138" />
+      <window_info anchor="right" id="Snyk" order="11" side_tool="true" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/SecurityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/LoginValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages_pt_BR.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="ResourceBundle" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/Livro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#703#704#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/form.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/UserValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/SecurityServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/LivrosApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/MyAuthenticationSuccessHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-test.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LivroController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="35" column="71" selection-start-line="35" selection-start-column="71" selection-end-line="35" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/UserControllers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/user/listadmin.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/livros/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="83" column="21" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/error/404.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
