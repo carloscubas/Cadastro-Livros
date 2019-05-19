@@ -1,4 +1,4 @@
-package br.biblioteca.livros;
+package br.biblioteca.livros.configurator;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

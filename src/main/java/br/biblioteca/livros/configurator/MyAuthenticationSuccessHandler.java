@@ -1,4 +1,4 @@
-package br.biblioteca.livros;
+package br.biblioteca.livros.configurator;
 
 import java.io.IOException;
 
