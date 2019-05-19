@@ -7,6 +7,7 @@ import br.biblioteca.livros.entities.Livro;
 import br.biblioteca.livros.repository.AutorRepository;
 import br.biblioteca.livros.repository.LivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -60,7 +61,8 @@ public class LivroController {
 
     @GetMapping("/alterar/{id}")
     public ModelAndView alterar(@PathVariable("id") Long id) {
-        Livro livro = this.livroRepository.findOne(id);
+        Livro livro = this.livroRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Livro não encontrado"));
         Iterable<Autor> autores = autorRepository.findAll();
         ModelAndView modelAndView = new ModelAndView("livros/form");
         modelAndView.addObject("autores", autores);
@@ -70,7 +72,7 @@ public class LivroController {
 
     @GetMapping("/excluir/{id}")
     public ModelAndView excluir(@PathVariable("id") Long id) {
-        Livro livro = this.livroRepository.findOne(id);
+        Livro livro = this.livroRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Livro não encontrado"));
         this.livroRepository.delete(livro);
         return new ModelAndView("redirect:/livros/list");
     }
