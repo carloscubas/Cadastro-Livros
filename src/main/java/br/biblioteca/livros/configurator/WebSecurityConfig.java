@@ -17,28 +17,19 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Value("${spring.profiles.active}")
-    private String activeProfile;
-
 	@Autowired
 	private UserDetailsService userDetailsService;
-
-    @Autowired
-    private MyAuthenticationSuccessHandler myAuthenticationSuccessHandler;
 
 	@Bean
 	public BCryptPasswordEncoder bCryptPasswordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
 
-
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-        if (activeProfile.trim().equalsIgnoreCase("test")) {
-            http.csrf().disable();
-            http.authorizeRequests().antMatchers("/h2-console").permitAll();
-            http.headers().frameOptions().disable();
-        }
+        http.csrf().disable();
+        http.authorizeRequests().antMatchers("/h2-console").permitAll();
+        http.headers().frameOptions().disable();
 
 		http
 		 .authorizeRequests()
@@ -70,6 +61,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	public AuthenticationManager authenticationManagerBean() throws Exception {
 		return super.authenticationManagerBean();
 	}
-
-
 }
