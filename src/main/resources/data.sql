@@ -1,5 +1,5 @@
-INSERT INTO USER (username, password) VALUES ('admin','$2a$10$AEXR8rqsVjUNZVNrbci8g.5cAUEIWy6xkAS42dBcSkT08l0qenpfS');
-INSERT INTO USER (username, password) VALUES ('teste','$2a$10$0tj2U9QgTprZrdd3hpypeeknvH6JObL2Gc0EAoR90aCdLgl..ZvjS');
+INSERT INTO LOGIN (username, password) VALUES ('admin','$2a$10$AEXR8rqsVjUNZVNrbci8g.5cAUEIWy6xkAS42dBcSkT08l0qenpfS');
+INSERT INTO LOGIN (username, password) VALUES ('teste','$2a$10$0tj2U9QgTprZrdd3hpypeeknvH6JObL2Gc0EAoR90aCdLgl..ZvjS');
 
 INSERT INTO ROLE (ID, ROLE) VALUES (1, 'ROLE_BASIC');
 INSERT INTO ROLE (ID, ROLE) VALUES (2, 'ROLE_ADMIN');
