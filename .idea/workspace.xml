@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82a4c048-2011-44cd-8b8f-6a6b719c04a2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/UserControllers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/UserControllers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/LoginValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/LoginValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/UserValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,6 +26,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="125" selection-start-line="125" selection-end-line="125" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/Role.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -107,15 +107,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/biblioteca/livros/controladores/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="35" column="69" selection-start-line="35" selection-start-column="69" selection-end-line="35" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -163,10 +154,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/Livro.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/AutorRepository.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/entities/Login.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -674,13 +665,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/application_prod.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -755,6 +739,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="125" selection-start-line="125" selection-end-line="125" />
         </state>
       </provider>
     </entry>
