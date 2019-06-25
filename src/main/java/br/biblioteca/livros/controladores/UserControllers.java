@@ -2,7 +2,7 @@ package br.biblioteca.livros.controladores;
 
 import java.util.List;
 
-import br.biblioteca.livros.entities.User;
+import br.biblioteca.livros.entities.Login;
 import br.biblioteca.livros.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,13 +19,13 @@ public class UserControllers {
 
 	@GetMapping("/list")
 	public ModelAndView list() {
-		List<User> users = userService.findAll();
+		List<Login> users = userService.findAll();
 		return new ModelAndView("/user/list", "users", users);
 	}
 
 	@GetMapping("/listadmin")
-	public ModelAndView listadmin(User user) {
-		List<User> users = userService.findAll();
+	public ModelAndView listadmin(Login user) {
+		List<Login> users = userService.findAll();
 		return new ModelAndView("/user/listadmin", "users", users);
 	}
 }

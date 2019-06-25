@@ -2,14 +2,14 @@ package br.biblioteca.livros.service;
 
 import java.util.List;
 
-import br.biblioteca.livros.entities.User;
+import br.biblioteca.livros.entities.Login;
 
 public interface UserService {
 	
-	void save (User user);
+	void save (Login user);
 
-	User findByUsername (String username);
+	Login findByUsername (String username);
 
-	List<User> findAll ();
+	List<Login> findAll ();
 	
 }

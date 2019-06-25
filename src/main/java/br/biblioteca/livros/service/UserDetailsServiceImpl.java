@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import br.biblioteca.livros.entities.Role;
-import br.biblioteca.livros.entities.User;
+import br.biblioteca.livros.entities.Login;
 import br.biblioteca.livros.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -25,7 +25,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
    public UserDetails loadUserByUsername(String username) 
 		   throws UsernameNotFoundException {
 
-       User user = userRepository.findByUsername(username);
+       Login user = userRepository.findByUsername(username);
 
        Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
        for (Role role : user.getRoles()) {

@@ -1,6 +1,6 @@
 package br.biblioteca.livros.controladores;
 
-import br.biblioteca.livros.entities.User;
+import br.biblioteca.livros.entities.Login;
 import br.biblioteca.livros.service.SecurityService;
 import br.biblioteca.livros.service.UserService;
 import br.biblioteca.livros.validator.UserValidator;
@@ -33,11 +33,11 @@ public class LoginController {
     @GetMapping(value = "/registration")
     public ModelAndView registration() {
 
-        return new ModelAndView("user/registration", "userForm", new User());
+        return new ModelAndView("user/registration", "userForm", new Login());
     }
 
     @PostMapping(value = "/registration")
-    public ModelAndView registrationform(@ModelAttribute("userForm") User userForm, BindingResult bindingResult,
+    public ModelAndView registrationform(@ModelAttribute("userForm") Login userForm, BindingResult bindingResult,
                                          Model model) {
 
         userValidator.validate(userForm, bindingResult);

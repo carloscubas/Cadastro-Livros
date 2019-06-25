@@ -1,6 +1,6 @@
 package br.biblioteca.livros.validator;
 
-import br.biblioteca.livros.entities.User;
+import br.biblioteca.livros.entities.Login;
 import br.biblioteca.livros.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -15,13 +15,13 @@ public class UserValidator implements Validator {
 
 	@Override
 	public boolean supports(Class<?> aClass) {
-		return User.class.equals(aClass);
+		return Login.class.equals(aClass);
 	}
 
 	@Override
 	public void validate(Object o, Errors errors) {
 		
-		User user = (User) o;
+		Login user = (Login) o;
 
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "username", "NotEmpty");
 		if (user.getUsername().length() < 6 || user.getUsername().length() > 32) {

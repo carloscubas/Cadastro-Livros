@@ -1,13 +1,13 @@
 package br.biblioteca.livros.repository;
 
-import br.biblioteca.livros.entities.User;
+import br.biblioteca.livros.entities.Login;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository
-        extends JpaRepository<User, String> {
+        extends JpaRepository<Login, String> {
 
-    public User findByUsername(String username);
+    public Login findByUsername(String username);
 
 }

@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 
 @Entity
-public class User implements Serializable {
+public class Login implements Serializable {
 
     private static final long serialVersionUID = 6987502270876995514L;
 
@@ -19,9 +19,9 @@ public class User implements Serializable {
 
     private String password;
 
-    public User() { }
+    public Login () { }
 
-    public User(String username, String password) {
+    public Login (String username, String password) {
         this.username = username;
         this.password = password;
     }
