@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82a4c048-2011-44cd-8b8f-6a6b719c04a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,20 +37,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="96" selection-start-column="96" selection-end-column="96" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="91" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
+            <state relative-caret-position="72">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -118,7 +114,6 @@
         <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/validator/LoginValidator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/MyAuthenticationSuccessHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/beans/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/beans/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/service/UserService.java" />
@@ -141,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/main/java/br/biblioteca/livros/repository/AutorRepository.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application-prod.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -362,7 +358,7 @@
       <window_info id="Designer" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.47958598" weight="0.22478071" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8813754" weight="0.30905077" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.88046116" visible="true" weight="0.50223213" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.83381087" weight="0.25496688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,9 +369,9 @@
       <window_info anchor="bottom" id="Console" order="10" />
       <window_info anchor="bottom" id="SonarQube" order="11" sideWeight="0.4956427" weight="0.28108108" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.75889784" weight="0.13876146" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.69902915" visible="true" weight="0.12165178" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.69902915" weight="0.46986607" />
       <window_info anchor="bottom" id="Build" order="14" sideWeight="0.49271986" visible="true" weight="0.2723112" />
-      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.30097088" side_tool="true" visible="true" weight="0.12165178" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.119538836" side_tool="true" visible="true" weight="0.50223213" />
       <window_info anchor="bottom" id="Messages" order="16" sideWeight="0.40744987" weight="0.23399559" />
       <window_info anchor="bottom" id="SonarLint" order="17" sideWeight="0.5177956" weight="0.092889905" />
       <window_info anchor="bottom" id="Docker" order="18" show_stripe_button="false" />
@@ -670,13 +666,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/application_prod.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="96" selection-start-column="96" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -686,10 +675,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="91" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
+        <state relative-caret-position="72">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
