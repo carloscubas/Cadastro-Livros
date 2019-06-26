@@ -20,12 +20,12 @@ public class UserControllers {
 	@GetMapping("/list")
 	public ModelAndView list() {
 		List<Login> users = userService.findAll();
-		return new ModelAndView("/user/list", "users", users);
+		return new ModelAndView("user/list", "users", users);
 	}
 
 	@GetMapping("/listadmin")
 	public ModelAndView listadmin(Login user) {
 		List<Login> users = userService.findAll();
-		return new ModelAndView("/user/listadmin", "users", users);
+		return new ModelAndView("user/listadmin", "users", users);
 	}
 }
