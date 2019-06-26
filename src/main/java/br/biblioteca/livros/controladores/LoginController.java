@@ -53,7 +53,7 @@ public class LoginController {
             securityService.login(userForm.getUsername(), password);
             return new ModelAndView("redirect:/");
         } catch (Exception e) {
-            return new ModelAndView("redirect:user/login");
+            return new ModelAndView("redirect:/login");
         }
     }
 }
