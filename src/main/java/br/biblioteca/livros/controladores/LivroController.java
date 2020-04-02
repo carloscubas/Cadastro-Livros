@@ -48,7 +48,6 @@ public class LivroController {
         return modelAndView;
     }
 
-
     @PostMapping(value = "/gravar")
     public ModelAndView create(@Valid Livro livro, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
