@@ -19,6 +19,7 @@
         <tr>
             <th scope="col">ID</td>
             <th scope="col">Título</td>
+            <th scope="col">Autor</td>
             <th scope="col"></td>
             <th scope="col"></td>
         </tr>
@@ -26,7 +27,8 @@
         <tbody>
         <tr th:each="livro : ${livros}">
             <th scope="row" th:text="${livro.id}">1</th>
-            <td><a href="#" th:href="@{'/livros/'+${livro.id}}" th:text="${livro.nome}"> Título </a></td>
+            <td th:text="${livro.nome}"> Título </td>
+            <td th:text="${livro?.autor?.nome}"> Autor </td>
             <td><a href="#" th:href="@{'/livros/alterar/'+${livro.id}}"> Altera </a></td>
             <td><a href="#" th:href="@{'/livros/excluir/'+${livro.id}}"> Excluir </a></td>
         </tr>
