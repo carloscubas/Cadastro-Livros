@@ -62,5 +62,4 @@ public class WebSecurityConfig {
 			http.antMatcher("/api/**").authorizeRequests().anyRequest().hasRole("API").and().httpBasic();
 		}
 	}
-
 }
