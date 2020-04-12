@@ -11,7 +11,6 @@ public class AutorConverter {
 	public static AutorDTO toDTO(Autor autor) {
 		AutorDTO dto = new AutorDTO();
 		dto.setNome(autor.getNome());
-		dto.setLivros(autor.getLivros().size() > 0 ? LivroConverter.toDTO(autor.getLivros()) : null);
 		return dto;
 	}
 

@@ -12,7 +12,6 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -33,12 +32,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		http.authorizeRequests().antMatchers(HttpMethod.GET, "/user/registration").permitAll()
 				.antMatchers(HttpMethod.POST, "/user/registration").permitAll()
-				.antMatchers(HttpMethod.GET, "/user/list")
-				.hasRole("BASIC").antMatchers(HttpMethod.GET, "/livros/lista")
-				.hasRole("BASIC").antMatchers(HttpMethod.GET, "/user/listadmin").hasRole("ADMIN")
-				.antMatchers("/user/form**").permitAll()
-				.and().formLogin().loginPage("/login").permitAll().and()
-				.logout().logoutSuccessUrl("/").permitAll().and().requestCache();
+				.antMatchers(HttpMethod.GET, "/user/list").hasRole("BASIC").antMatchers(HttpMethod.GET, "/api")
+				.hasRole("BASIC").antMatchers(HttpMethod.GET, "/livros/lista").hasRole("BASIC")
+				.antMatchers(HttpMethod.GET, "/user/listadmin").hasRole("ADMIN").antMatchers("/user/form**").permitAll()
+				.and().formLogin().loginPage("/login").permitAll().and().logout().logoutSuccessUrl("/").permitAll()
+				.and().requestCache();
 	}
 
 	@Autowired
