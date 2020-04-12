@@ -12,6 +12,7 @@ import br.biblioteca.livros.dtos.LivroDTO;
 import br.biblioteca.livros.service.AutorService;
 import br.biblioteca.livros.service.LivroService;
 
+// rest api controller
 @Service
 public class ApiFacade {
 
