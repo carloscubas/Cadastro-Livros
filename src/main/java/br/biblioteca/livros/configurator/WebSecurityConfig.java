@@ -59,8 +59,7 @@ public class WebSecurityConfig {
 	@Order(1)
 	public static class ApiWebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter {
 		protected void configure(HttpSecurity http) throws Exception {
-			// http.antMatcher("/api/**").authorizeRequests().anyRequest().hasRole("API").and().httpBasic();
-			http.antMatcher("/api/**").authorizeRequests().anyRequest().permitAll();
+			http.antMatcher("/api/**").authorizeRequests().anyRequest().hasRole("API").and().httpBasic();
 		}
 	}
 }
