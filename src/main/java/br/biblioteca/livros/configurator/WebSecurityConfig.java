@@ -10,11 +10,14 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @EnableWebSecurity
 public class WebSecurityConfig {
+
+	private static String REALM = "MY_TEST_REALM";
 
 	@Autowired
 	private UserDetailsService userDetailsService;
@@ -59,7 +62,10 @@ public class WebSecurityConfig {
 	@Order(1)
 	public static class ApiWebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter {
 		protected void configure(HttpSecurity http) throws Exception {
-			http.antMatcher("/api/**").authorizeRequests().anyRequest().hasRole("API").and().httpBasic();
+			http.csrf().disable().authorizeRequests().antMatchers(HttpMethod.GET, "/api/**").hasRole("API")
+					.antMatchers(HttpMethod.POST, "/api/**").hasRole("API").and().httpBasic().and().sessionManagement()
+					.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+
 		}
 	}
 }
