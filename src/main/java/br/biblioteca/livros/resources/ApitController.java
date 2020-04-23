@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import br.biblioteca.livros.dtos.AutorDTO;
 import br.biblioteca.livros.dtos.AvaliacaoDTO;
 import br.biblioteca.livros.dtos.LivroDTO;
+import br.biblioteca.livros.exception.LivroNotFoundException;
 import br.biblioteca.livros.facade.ApiFacade;
 
 @RestController
@@ -37,7 +38,7 @@ public class ApitController {
 	public ResponseEntity<Long> comentario(@PathVariable("id") Long id, @RequestBody AvaliacaoDTO avaliacao) {
 		try {
 			return ResponseEntity.ok(apiFacade.salvaAvaliacao(id, avaliacao));
-		} catch (Exception e) {
+		} catch (LivroNotFoundException e) {
 			return ResponseEntity.notFound().build();
 		}
 	}
