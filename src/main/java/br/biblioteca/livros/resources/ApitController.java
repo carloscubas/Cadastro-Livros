@@ -2,6 +2,8 @@ package br.biblioteca.livros.resources;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,7 +37,7 @@ public class ApitController {
 	}
 
 	@PostMapping("/livro/avaliacao/{id}")
-	public ResponseEntity<Long> comentario(@PathVariable("id") Long id, @RequestBody AvaliacaoDTO avaliacao) {
+	public ResponseEntity<Long> comentario(@PathVariable("id") Long id, @Valid @RequestBody AvaliacaoDTO avaliacao) {
 		try {
 			return ResponseEntity.ok(apiFacade.salvaAvaliacao(id, avaliacao));
 		} catch (LivroNotFoundException e) {
