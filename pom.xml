@@ -66,7 +66,7 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
@@ -100,17 +100,14 @@
 		<dependency>
 			<groupId>nz.net.ultraq.thymeleaf</groupId>
 			<artifactId>thymeleaf-layout-dialect</artifactId>
-			<version>2.1.1</version>
 		</dependency>
 		<dependency>
 			<groupId>nz.net.ultraq.thymeleaf</groupId>
 			<artifactId>thymeleaf-layout-dialect</artifactId>
-			<version>1.4.0</version>
 		</dependency>
 		<dependency>
 			<groupId>nz.net.ultraq.thymeleaf</groupId>
 			<artifactId>thymeleaf-layout-dialect</artifactId>
-			<version>2.1.1</version>
 		</dependency>
 
 		<dependency>
@@ -148,6 +145,12 @@
 			</exclusions>
 		</dependency>
 
+        <dependency>
+            <groupId>com.github.zifnab87</groupId>
+            <artifactId>spring-boot-rest-api-helpers</artifactId>
+            <version>e2c6ac0</version>
+        </dependency>
+
 	</dependencies>
 
 	<build>
@@ -158,5 +161,12 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 
 </project>

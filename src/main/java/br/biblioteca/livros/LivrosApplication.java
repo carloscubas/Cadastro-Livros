@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = { "br.biblioteca.livros", "springboot.rest" })
 public class LivrosApplication {
 
 	public static void main(String[] args) {

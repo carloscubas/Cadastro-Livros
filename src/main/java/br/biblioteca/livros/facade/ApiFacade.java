@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
 import br.biblioteca.livros.converters.AutorConverter;
@@ -31,6 +32,10 @@ public class ApiFacade {
 
 	@Autowired
 	AvaliacaoService avaliacaoService;
+
+	public Page<Livro> findAllBooks(String filterStr, String rangeStr, String sortStr) {
+		return livroService.findAll(filterStr, rangeStr, sortStr);
+	}
 
 	public List<LivroDTO> findAllBooks() {
 		return LivroConverter.toDTO(livroService.findAll());

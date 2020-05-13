@@ -41,6 +41,7 @@ public class WebSecurityConfig {
 			http.headers().frameOptions().disable();
 
 			http.authorizeRequests().antMatchers(HttpMethod.GET, "/user/registration").permitAll()
+					.antMatchers(HttpMethod.GET, "/list/livros").permitAll()
 					.antMatchers(HttpMethod.POST, "/user/registration").permitAll()
 					.antMatchers(HttpMethod.GET, "/user/list").hasRole("BASIC")
 					.antMatchers(HttpMethod.GET, "/livros/lista").hasRole("BASIC")

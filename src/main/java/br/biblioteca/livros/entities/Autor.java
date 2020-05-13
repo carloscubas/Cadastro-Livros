@@ -8,11 +8,10 @@ package br.biblioteca.livros.entities;
  */
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -28,8 +27,8 @@ public class Autor implements Serializable {
 
 	private String nome;
 
-	@OneToMany(mappedBy = "autor", fetch = FetchType.LAZY)
-	private List<Livro> livros = new ArrayList<>();
+	@OneToMany
+	private Set<Livro> livros = new HashSet<>();
 
 	public Long getId() {
 		return id;
@@ -47,11 +46,11 @@ public class Autor implements Serializable {
 		this.nome = nome;
 	}
 
-	public List<Livro> getLivros() {
+	public Set<Livro> getLivros() {
 		return livros;
 	}
 
-	public void setLivros(final List<Livro> livros) {
+	public void setLivros(Set<Livro> livros) {
 		this.livros = livros;
 	}
 
