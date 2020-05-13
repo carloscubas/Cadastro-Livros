@@ -16,6 +16,7 @@ public class ApiList {
 	@Autowired
 	ApiFacade apiFacade;
 
+	// https://github.com/zifnab87/spring-boot-rest-api-helpers
 	@GetMapping(value = "/livros")
 	public Iterable<Livro> filterBy(@RequestParam(required = false, name = "filter") String filterStr,
 			@RequestParam(required = false, name = "range") String rangeStr,

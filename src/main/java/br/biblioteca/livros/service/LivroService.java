@@ -28,7 +28,7 @@ public class LivroService {
 	}
 
 	public Page<Livro> findAll(String filterStr, String rangeStr, String sortStr) {
-		QueryParamWrapper wrapper = QueryParamExtractor.extract(filterStr, rangeStr, sortStr);
+		QueryParamWrapper wrapper = QueryParamExtractor.extract("{nome: Spring boot}", "[0,2]", "[nome,DESC]");
 		return filterService.filterBy(wrapper, livroRepository, Arrays.asList("nome"));
 	}
 
